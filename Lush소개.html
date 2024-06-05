@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,119 @@
         * {
             margin: 0;
             padding: 0;
+            border: 1px solid black;
+        }
+
+        .banner {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .int {
+            height: 800px;
+            position: relative;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            /* 브라우저 창에서 고정 된 위치에 놓는다 */
+            position: fixed;
+            top: 15px;
+            padding-bottom: 30px;
+            justify-content: center;
+            border-bottom: 0.1px solid rgba(255, 255, 255, 0.24);
+
+            width: 100%;
+        }
+
+        .navigation>div {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo>a {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: bolder;
+            text-decoration: none;
+
+            padding-left: 6px;
+            padding-right: 40px;
+            padding-top: 0px;
+            padding-bottom: 5px;
+        }
+
+        .menu>a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+
+            margin-left: 30px;
+        }
+
+        .introduce {
+            position: absolute;
+            left: 15%;
+            bottom: 20%;
+        }
+
+        .introduce > div {
+            padding: 15px;
         }
 
     </style>
 
 
 </head>
+
 <body>
+
+    <!-- 상단에 고정 -->
+    <div class="banner">
+        <img src="https://i.ytimg.com/vi/LsmZEPmQChY/maxresdefault.jpg" alt="" width="100%">
+    </div>
+
     <div class="container">
+        <!-- 투명한 div 영역 (height 부여) -->
+        <div class="int">
+            <div class="introduce">
+                <div>
+                    <h1>러쉬 소개</h1>
+                </div>
+                <div>
+                    <h2>프레쉬 핸드메이드</h2>
+                    <h2>코스메틱 브랜드</h2>
+                </div>
+                <div>
+                    <h2>우리의 글로벌 기부 생태계는 적절하고 급진적이며 광범위 합니다.</h2>
+                </div>
+            </div>
+        </div>
 
     </div>
 
 
+
+    <div class="navigation">
+        <div>
+            <div class="logo">
+                <a href="">Lush</a>
+            </div>
+
+            <div class="menu">
+                <a href="">러쉬소개</a>
+                <a href="">캠페인</a>
+                <a href="">스파</a>
+                <a href="">매장안내</a>
+                <a href="">B2B</a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
