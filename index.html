@@ -11,7 +11,7 @@
         }
         
         div{
-            font-size: 20px;  
+            font-size: 20px; 
         }
 
         .first{
@@ -21,18 +21,25 @@
 
         .navigation{
         display: flex;
-        justify-items: center;
-        
+        justify-content: space-evenly;
         position:fixed;
         top:0;
         width: 100%;
-        background-color: white;
+        background-color: black;
+        
         }
 
         .navigation >div{
             font-size: 30px;
+            border: 0;
         }
 
+        .navigation > div > a{
+        text-decoration: none;
+        color: white;
+    }
+        
+        
         .quick{
             position: fixed;
             right: 0;
@@ -46,6 +53,7 @@
         }
         .logo{
             font-size: 100px;
+
         }
         .banner{
             font-size: 50px;
@@ -87,8 +95,10 @@
     <div class="first"> <!-- /최외곽/ -->
         <div><!-- /  상단 메뉴 / -->
             <div class="navigation">
-                <div class="logo">lush</div>
-                <div>
+                <div class="logo">
+                    <a href="/index.html">lush</a>
+                </div>
+                <div >
                     <a href="/Lush소개.html">러쉬 소개</a>
                 </div>
                 <div> 
@@ -139,7 +149,7 @@
 
         </div>
             <div class="servey">
-                <a href="">설문조사</a>
+                <div>설문조사</div>
                 <div>
                     여러분의 러쉬 경험을 남겨주세요!
                 </div>
