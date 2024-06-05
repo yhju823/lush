@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매장안내</title>
+<style>
+
+    *{
+        border: 1px  solid  black;
+    }
+        
+    div{
+        font-size: 20px; 
+    }
+
+    .first{
+        width: 100%;
+        height: 100%;
+        }
+
+    .navigation{
+    display: flex;
+    justify-content: space-evenly;
+    position:fixed;
+    top:0;
+    width: 100%;
+    background-color: black;
+    }
+
+    .navigation >div{
+        font-size: 30px;
+        border: 0;
+    }
+
+    .navigation > div > a{
+    text-decoration: none;
+    color: white;
+    }
+
+    .logo{
+        font-size: 100px;
+    }
+
+    .quick{
+        position: fixed;
+        right: 0;
+        top: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: beige;
+        
+    }
+
+    .banner{
+            font-size: 50px;
+            background: #000;
+            color: azure;
+            padding-top: 200px;
+        }
+
+        .banner-logo{
+            width: 200px;
+        }
+        .banner-bg{
+            width: 100%;
+
+        }
+        .banner >a{
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .content{
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            padding: 20px;
+        }
+</style>
+
+
+</head>
+<body>
+    
+        <div class="first"> <!-- /최외곽/ -->
+            <div><!-- /  상단 메뉴 / -->
+                <div class="navigation">
+                    <div class="logo">
+                        <a href="/index.html">lush</a>
+                    </div>
+                    <div >
+                        <a href="/Lush소개.html">러쉬 소개</a>
+                    </div>
+                    <div> 
+                        <a href="/spa.html">스파</a>
+                        </div>
+                    <div>
+                        <a href="./매장.html">매장</a>
+                    </div>
+                </div>
+
+                <div class="quick">
+                    <div>카카오톡</div>
+                    <div>매장찾기</div>
+                    <div>
+                        <a href=""><img width="40px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlLvCjKdvvLqboIcjtUjvrC-BG4GLGK2Fyg&s" alt=""></a>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div>가장 가까운 매장을 찾아 향기로운 러쉬를 만나보세요
+
+                    </div>
+                        <div>
+                        <img class="banner-bg" src="https://www.jangup.com/news/photo/202306/90603_62111_3141.jpg">
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="left">
+                        <img width="500x" src="https://weare.lush.co.kr/images/shop_applepay@3x.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        서울 경기 충청 전라 
+                    </div>
+                </div>
+
+    
+        </div>
+    
+
+
+</body>
+</html>
