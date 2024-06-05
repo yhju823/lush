@@ -10,17 +10,17 @@
         * {
             margin: 0;
             padding: 0;
-            border: 1px solid black;
+            border: 1px solid rgba(0, 0, 0, 0.205);
         }
 
         .banner {
-            position: absolute;
+            position: fixed;
             top: 0;
             width: 100%;
         }
 
         .int {
-            height: 800px;
+            height: 950px;
             position: relative;
         }
 
@@ -29,7 +29,7 @@
             align-items: center;
             /* 브라우저 창에서 고정 된 위치에 놓는다 */
             position: fixed;
-            top: 15px;
+            top: 20px;
             padding-bottom: 30px;
             justify-content: center;
             border-bottom: 0.1px solid rgba(255, 255, 255, 0.24);
@@ -50,7 +50,7 @@
 
             padding-left: 6px;
             padding-right: 40px;
-            padding-top: 0px;
+            padding-top: 15px;
             padding-bottom: 5px;
         }
 
@@ -69,9 +69,26 @@
             bottom: 20%;
         }
 
+        
+
         .introduce > div {
             padding: 15px;
         }
+
+        .introduce > div:nth-child(2) {
+            padding-left: 30px;
+        }
+
+        .introduce > div:nth-child(3) {
+            padding-left: 30px;
+        }
+
+        .tell {
+            background-color: white;
+            height: 10000px;
+            width: 100%;
+        }
+
 
     </style>
 
@@ -90,18 +107,17 @@
         <div class="int">
             <div class="introduce">
                 <div>
-                    <h1>러쉬 소개</h1>
+                    <h4>러쉬 소개</h4>
                 </div>
-                <div>
-                    <h2>프레쉬 핸드메이드</h2>
-                    <h2>코스메틱 브랜드</h2>
+                <div class="j">
+                    <h1>프레쉬 핸드메이드</h1>
+                    <h1>코스메틱 브랜드</h1>
                 </div>
-                <div>
-                    <h2>우리의 글로벌 기부 생태계는 적절하고 급진적이며 광범위 합니다.</h2>
+                <div class="j">
+                    <h3>우리의 글로벌 기부 생태계는 적절하고 급진적이며 광범위 합니다.</h3>
                 </div>
             </div>
         </div>
-
     </div>
 
 
@@ -122,6 +138,26 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="int">
+            <div class="tell">
+                <div>
+                    <h4>러쉬 소개</h4>
+                </div>
+                <div class="j">
+                    <h1>프레쉬 핸드메이드</h1>
+                    <h1>코스메틱 브랜드</h1>
+                </div>
+                <div class="j">
+                    <h3>우리의 글로벌 기부 생태계는 적절하고 급진적이며 광범위 합니다.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
 
 </body>
 
