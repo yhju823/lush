@@ -61,7 +61,7 @@
             right: 10px;
             top: 300px;
 
-            background-color: skyblue;
+            background-color: transparent            ;
 
             height: 210px;
             width: 70px;
@@ -72,6 +72,14 @@
         .quick > div{
             width: 70px;
             height: 70px; 
+        
+        }
+
+        .quick > div > a > img{
+            width: 60px;
+            height: 60px;
+
+            border-radius: 70px;
         }
 
         .banner{
@@ -130,6 +138,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
 
             padding-left: 10px;
             padding-right: 10px;
@@ -139,7 +148,20 @@
         
         .preview_item > div >img{
             width: 160px;
+        
         }
+
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .item_text{
+            font-size: 13px;
+            justify-content: center;
+        }
+
+        
 
         .survey{
             padding-top: 150px;
@@ -147,6 +169,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
 
             position: relative;
         }
@@ -159,7 +182,29 @@
 
             position: absolute;
             left: 15%;
-            bottom: 12%;
+            bottom: 15%;
+        }
+
+        .survey_button{
+            border: white solid 2px;
+            width: 220px;
+            height: 50px;
+
+            text-align: center;
+            align-content: center;
+        }
+
+        .survey_button > a{
+            text-decoration: none;
+            color: white;
+            justify-content: center;
+            
+        }
+
+        .survey_button:hover{
+            background-color: white;
+            color: black;
+
         }
 
         .footer{
@@ -174,16 +219,45 @@
             padding-bottom: 80px;
             align-items: center;
 
-            background-color: grey;
+            background-color: transparent;
         }
 
         .value_box{
             display: flex;
             justify-content: space-evenly;
+            align-items: center;
 
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            height: 200px;
+
+            background-color: black;
         }
+
+        .ROUND{
+
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+
+            text-align: center;
+            align-content: center;
+
+            font-size: 10px;
+        }
+
+        .ROUND:hover{
+            
+            background-image: url(./resources/images/index/index_banner_bg.jpg);
+        }
+
+        .ROUND > a{
+            text-decoration: none;
+            color: white;
+        }
+
 
         .footer{
             background-color: black;
@@ -198,6 +272,10 @@
 
             color: bisque;
         }
+
+
+        
+
     </style>
 
 </head>
@@ -215,9 +293,18 @@
 
         
         <div class="quick"><!-- 퀵메뉴 -->
-            <div>카카오톡</div>
-            <div>매장안내</div>
-            <div>상단으로</div>
+            <div>
+                <a  href="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" alt=""></a>
+            </div>
+            <div>
+                <a href="">
+                <img src="./resources/images/index/shop.webp" alt=""></a>
+            </div>
+            <div>
+                <a href="">
+                <img src="https://cdn.icon-icons.com/icons2/3860/PNG/512/top_arrow_icon_238720.png" alt=""></a>
+            </div>
         </div><!-- 퀵메뉴 -->
 
 
@@ -237,7 +324,7 @@
 
             <div class="service"> <!-- 러쉬 서비스 -->
                 <div class="preview_text">
-                    <div style="font-size: 10px;">
+                    <div style="font-size: 10px; text-align: center;">
                         미리보는 러쉬
                     </div>
                     <div style="font-size:  18px; font-weight: bold;">
@@ -247,22 +334,22 @@
                 <div class="preview_item"> <!-- 이미지는 라운드처리 -->
                     <div> <!--  디지털덕찌 -->
                         <img src="https://weare.lush.co.kr/images/main_app_digital@3x.jpg" alt="">
-                        <div>디지털덕찌</div> 
-                        <div>러쉬 만의 맴버십 뱃지 프로그램 <br>
+                        <div class="title">디지털덕찌</div> 
+                        <div class="item_text">러쉬 만의 맴버십 뱃지 프로그램 <br>
                             덕찌력을 쌓아보세요! <br>
                             특별한 선물이 준비되어 있어요.</div>
                     </div>
                     <div> <!-- 회원선물 -->
                         <img src="https://weare.lush.co.kr/images/main_app_member@3x.jpg" alt="">
-                        <div>회원선물</div> 
-                        <div>공식 앱 회원에게만 제공하는 <br>
+                        <div class="title">회원선물</div> 
+                        <div class="item_text">공식 앱 회원에게만 제공하는 <br>
                             365일 신선한 스마트 샘플과 <br>
                             깜짝 선물 교환권을 발급해 드려요!</div>
                     </div>
                     <div>
                         <img src="https://weare.lush.co.kr/images/main_app_gift@3x.jpg" alt="">
-                        <div>선물하기</div> 
-                        <div>주소와 연락처를 몰라도 <br>
+                        <div class="title">선물하기</div> 
+                        <div class="item_text">주소와 연락처를 몰라도 <br>
                             향기로운 선물을 메시지 카드와 함께 <br>
                             쇼핑백에 담아 선물해 보세요!   </div>
                     </div>
@@ -277,6 +364,10 @@
                     <div style="font-size: 25px;"
                     >설문조사</div>
                 <div>여러분의 러쉬 경험을 알려주세요!</div>
+                <br>
+                <div class="survey_button">
+                    <a href="">바로 참여하기</a>
+                    </div>
             </div>
             </div><!--설문 -->
 
@@ -286,19 +377,35 @@
 
             <div class="vlaue"> <!--러쉬가치 -->
                 <div class="value_box"><!--첫째줄 -->
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+                    <div class="ROUND">
+                        <a >NAKED <BR></BR> PRODUCT</a>
+                    </div>
+                    <div class="ROUND">
+                        <a >FIGHTNG <BR></BR>ANIMAL TESTING</a>
+                    </div>
+                    <div class="ROUND">
+                        <a >FRESH <BR></BR>COSMETICS</a>
+                    </div>
                 </div><!--둘째줄 -->
                 <div class="value_box">
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
+                    <div  class="ROUND">
+                        <a >100% <BR></BR> VEGETARIAN</a>
+                    </div>
+                    <div class="ROUND">
+                        <a >ETHICAL <BR></BR>BUYING</a>
+                    </div>
+                    <div class="ROUND">
+                        <a >HANDMADE <BR></BR>WITH LOVE</a>
+                    </div>
                 </div>
             </div>
 
             <div class="footer"><!--footer-->
-                <div>러쉬 앱 다운받기</div>
+                <div>러쉬 앱 다운받기
+                    <div class="app_install">
+
+                    </div>
+                </div>
                 <div>고객센터</div>
                 <div>기업선물</div>
                 <div>주소</div>
@@ -306,12 +413,7 @@
 
             </div>
 
-
         </div><!-- 페이지 컨텐츠 -->
-
-
-
-
     </div><!-- 최외곽 -->
 
 
