@@ -10,13 +10,14 @@
         * {
             margin: 0;
             padding: 0;
-            border: 1px solid rgba(0, 0, 0, 0.205);
+            border: 1px solid rgba(0, 0, 0, 0.726);
         }
 
         .banner {
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: -1;
         }
 
         .int {
@@ -32,7 +33,7 @@
             top: 20px;
             padding-bottom: 30px;
             justify-content: center;
-            border-bottom: 0.1px solid rgba(255, 255, 255, 0.24);
+            border-bottom: 0.1px solid rgba(0, 0, 0, 0.726);
 
             width: 100%;
         }
@@ -43,8 +44,8 @@
         }
 
         .logo>a {
-            color: rgb(255, 255, 255);
-            font-size: 30px;
+            color: rgba(0, 0, 0, 0.692);
+            font-size: 35px;
             font-weight: bolder;
             text-decoration: none;
 
@@ -56,7 +57,7 @@
 
         .menu>a {
             text-decoration: none;
-            color: #ffffff;
+            color: #000000ab;
             font-size: 15px;
             font-weight: bold;
 
@@ -69,30 +70,86 @@
             bottom: 20%;
         }
 
-        
 
-        .introduce > div {
+
+        .introduce>div {
             padding: 15px;
+            color: rgba(0, 110, 96, 0.87);
         }
 
-        .introduce > div:nth-child(2) {
+        .introduce>div:nth-child(2) {
             padding-left: 30px;
         }
 
-        .introduce > div:nth-child(3) {
+        .introduce>div:nth-child(3) {
             padding-left: 30px;
         }
 
         .tell {
-            background-color: white;
-            height: 10000px;
+            background-color: rgb(255, 255, 255);
+            height: 3500px;
             width: 100%;
         }
 
-        .j > div {
+        .j>div {
             font-weight: bolder;
             font-size: 55px;
         }
+
+        .body {
+            top: 0;
+        }
+
+        .A {
+            margin-top: 10%;
+            margin-left: 30%;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .B{
+            margin-left: 31%;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .C {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        body {
+            background-image: url("https://i.ytimg.com/vi/LsmZEPmQChY/maxresdefault.jpg");
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .img1{
+            display: flex;
+            padding-left: 18%;
+            margin-top: 10%;
+        }
+
+        .img2{
+            padding-left: 8%;
+            margin-top: 10%;
+        }
+
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            height: 500px;
+            width: 100%;
+            display: flex;
+        }
+
+        
+    .footer > div{
+        width: 50%;
+        color: white;
+    }
 
 
     </style>
@@ -123,9 +180,103 @@
                 </div>
             </div>
         </div>
+
+        <div class="tell" style="background-color: white;">
+
+            <div class="body">
+                <div class="A">
+                    <div>“ 러쉬는 자연에서 얻은 신선한 재료와</div>
+                    <div>동물실험을 하지 않는 정직한 재료를 사용하여</div>
+                    <div>모든 제품을 손으로 만듭니다. ”</div>
+                </div>
+
+                <div class="B">
+                    <a>더불어 공장 거래, 인권 보호, 포장 최소화 등 다양한 캠페인 활동을 통해 기업 윤리와 신념을 알리고 있습니다.
+                    </a>
+                </div>
+            </div>
+
+            <div class="img1">
+                <img src="./resources/images/lush 1.png" alt="">
+                
+                <div class="img2">
+                    <div class="C">
+                        <div>러쉬는 어떤 이유에서도</div>
+                        <div>제품을 동물실험 하지 않고,</div>
+                        <div>동물실험을 거친 원재료조차</div>
+                        <div>사용하지 않습니다.</div>
+                    </div>
+
+                    <div class="D">
+                        <div>직접 구매팀을 운영하며, 엄격한 기준을 바탕으로</div>
+                        <div>윤리적인 공정 여부를 확인합니다.</div>
+                        <div>믿을 수 있는 생산자로부터 직거래를 원칙으로 합니다.</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="img1">
+                <img src="./resources/images/lush 2.png" alt="">
+                
+                <div class="img2">
+                    <div class="C">
+                        <div>러쉬는 배쓰 밤, 샤워 젤리,</div>
+                        <div>고체 샴푸와 같은</div>
+                        <div>기발하고 혁신적인</div>
+                        <div>제품을 선보입니다.</div>
+                    </div>
+
+                    <div class="D">
+                        <div>특히 불필요한 포장을 없앤 고체 형태의 다양한 '네이키드</div>
+                        <div>(Naked)'제품을 개발하며 화장품 산업에서 혁명을</div>
+                        <div>일으켜 왔습니다.</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="img1">
+                <img src="./resources/images/lush 3.png" alt="">
+                
+                <div class="img2">
+                    <div class="C">
+                        <div>신선함은 러쉬 철학의</div>
+                        <div>핵심입니다.</div>
+                    </div>
+
+                    <div class="D">
+                        <div>신선한 과일, 채소, 에센셜 오일, 최소한의 보존제와</div>
+                        <div>안전한 인공 성분을 사용하여 제품을 선보입니다.</div>
+                        <div>러쉬의 모든 제품은 베지테리언(Vegetarian)이며,</div>
+                        <div>그 중 약 90%는 식물성 원료로만 만든 비건(Vegan)입니다.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img1">
+                <img src="./resources/images/lush 4.png" alt="">
+                
+                <div class="img2">
+                    <div class="C">
+                        <div>이 모든 것은</div>
+                        <div>‘고객은 항상 옳다’는 믿음과</div>
+                        <div>러쉬의 핵심 가치인</div>
+                        <div>직원들의 진심이 모여 얻은</div>
+                        <div>결실입니다.</div>
+                    </div>
+
+                    <div class="D">
+                        <div>앞으로도 러쉬는 현시대에 필요한 제품과 서비스를</div>
+                        <div>제공할 것입니다.</div>
+                        <div>환경 보호를 위해 고민하고, 동물과 자연 그리고 사람이</div>
+                        <div>조화로운 세상을 만들기 위한 도전과 혁신에 앞장섭니다.</div>
+                    </div>
+                </div>
+            </div>
+
+
     </div>
-
-
 
     <div class="navigation">
         <div>
@@ -141,15 +292,13 @@
         </div>
     </div>
 
-
-    <div class="container">
-        <div class="int">
-            <div class="tell">
-                <div></div>
-            </div>
-        </div>
-    </div>
-
+    <div class="footer">
+        <div>
+            <h1>ttatG's Shop</h1>
+            <hr>
+            <h3>대전광역시 서구 월평동로 83</h3>
+            <h3>Tel : 042 - 1234 - 5678</h3>
+            <h3>e-mail : 2000msj@naver.com</h3>
         </div>
     </div>
 
