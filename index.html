@@ -2,164 +2,320 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <meta name="viewport" content="width=i, initial-scale=1.0">
+    <title>홈화면</title>
 
     <style>
         *{
-            border: 1px  solid  black;
-        }
-        
-        div{
-            font-size: 20px; 
+            border: 0px solid lightgrey;
         }
 
-        .first{
+        .outline{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding-top: 30px;
+        }
+
+        .blank{
             width: 100%;
-            height: 100%;
-            }
+            background-color: black;
+            height: 30%;
+        }
 
         .navigation{
-        display: flex;
-        justify-content: space-evenly;
-        position:fixed;
-        top:0;
-        width: 100%;
-        background-color: black;
-        
-        }
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
 
-        .navigation >div{
-            font-size: 30px;
-            border: 0;
-        }
-
-        .navigation > div > a{
-        text-decoration: none;
-        color: white;
-    }
-        
-        
-        .quick{
             position: fixed;
-            right: 0;
-            top: 50%;
+            top: 0px;
+            background-color: white;
+            
+            z-index: 100;
+
+            
+        }
+
+
+        .navigation > div{
+
+            align-content: center;
+
+            font-size: 15px;
+        }
+
+        .navigation > div >a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+
+        .quick{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 10px;
+            top: 300px;
+
+            background-color: skyblue;
+
+            height: 210px;
+            width: 70px;
+
+            z-index: 99;
+        }
+
+        .quick > div{
+            width: 70px;
+            height: 70px; 
+        }
+
+        .banner{
+            width: 100%;
+            height: 500px;
+            background-image: url(./resources/images/index/bn_bg.jpg);
+
+            position: relative;
+        }
+
+        .bn_text{
+            font-size: 35px;
+            color: white;
+            font-weight: bolder;
+
+            position: absolute;
+            left: 20%;
+            bottom: 40%;
+        }
+
+        .bn_install{
+            display: flex;
+            font-size: 50px;
+
+            position: absolute;
+            left: 20%;
+            bottom: 15%;
+        }
+
+        .banner > div >img{
+            width: 150px;
+            height: 40px;
+        }
+
+        .content{
+            align-items: center;
+
+        }
+
+        .service{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 80px;
+        }
+
+
+        .preview_item{
+            display: flex;
+            padding-top: 20px;
+
+        }
+
+        .preview_item >div{
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: beige;
-            font-size: 30px;
+
+            padding-left: 10px;
+            padding-right: 10px;
 
         }
-        .logo{
-            font-size: 100px;
 
-        }
-        .banner{
-            font-size: 50px;
-            background: #000;
-            color: azure;
-            padding-top: 200px;
-        }
-
-        .banner-logo{
-            width: 200px;
-        }
-        .banner-bg{
-            width: 100%;
-
-        }
-        .banner >a{
-            font-size: 30px;
-            color: white;
-            text-decoration: none;
-        }
-
-        .service {
-            display: flex;
-            justify-items: center;
-            width: 3000px;
-        }
         
-        .servey{
+        .preview_item > div >img{
+            width: 160px;
+        }
+
+        .survey{
+            padding-top: 150px;
+
             display: flex;
             flex-direction: column;
-            width: 3000px;
+            align-items: center;
+
+            position: relative;
         }
 
+
+        .survey_text{
+            font-size: 18px;
+            color: black;
+            font-weight:bolder;
+
+            position: absolute;
+            left: 15%;
+            bottom: 12%;
+        }
+
+        .footer{
+            display: flex;
+
+            width: 100%;
+            height: 100px;
+        }
+
+        .vlaue{
+            padding-top: 80px;
+            padding-bottom: 80px;
+            align-items: center;
+
+            background-color: grey;
+        }
+
+        .value_box{
+            display: flex;
+            justify-content: space-evenly;
+
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer{
+            background-color: black;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            display: flex;
+            justify-content: space-around;
+
+            color: bisque;
+        }
     </style>
 
 </head>
 <body>
 
-    <div class="first"> <!-- /최외곽/ -->
-        <div><!-- /  상단 메뉴 / -->
-            <div class="navigation">
-                <div class="logo">
-                    <a href="/index.html">lush
-                        <img src="" alt="">
-                    </a>
+    <div class="outline"><!-- 최외곽 -->
+
+        <div class="navigation"><!-- 네비게이션 -->
+            <div style="font-size: 35px; font-weight: bolder;">  
+                <a href="">LUSH</a></div>
+            <div>  <a href="./Lush소개.html">러쉬소개</a> </div>
+            <div> <a href="./spa.html">스파</a></div>
+            <div> <a href="./매장.html">매장 안내</a>   </div>
+        </div><!-- 네비게이션 -->
+
+        
+        <div class="quick"><!-- 퀵메뉴 -->
+            <div>카카오톡</div>
+            <div>매장안내</div>
+            <div>상단으로</div>
+        </div><!-- 퀵메뉴 -->
+
+
+        <div class="content"><!-- 페이지 컨텐츠 -->
+
+            <div class="banner"> <!-- 배너 -->
+                <div class="bn_text">
+                    지친 피부에 <br>
+                    충전이 필요한 지금!
                 </div>
-                <div >
-                    <a href="/Lush소개.html">러쉬 소개</a>
-                </div>
-                <div> 
-                    <a href="/spa.html">스파</a>
+                <div class="bn_install"><!-- install -->
+                    <img  src="https://weare.lush.co.kr/images/btn_app_apple.png" >
+                    <div style="width: 20px;">   </div>
+                    <img src="https://weare.lush.co.kr/images/btn_app_google.png" >
+                </div><!-- install -->
+            </div><!-- 배너 -->
+
+            <div class="service"> <!-- 러쉬 서비스 -->
+                <div class="preview_text">
+                    <div style="font-size: 10px;">
+                        미리보는 러쉬
                     </div>
-                <div>
-                    <a href="./매장.html">매장</a>
+                    <div style="font-size:  18px; font-weight: bold;">
+                        러쉬에서 만나는 다채로운 서비스
+                    </div>
                 </div>
-            </div>
-
-            <div class="quick">
-                <div>카카오톡</div>
-                <div>매장찾기</div>
-                <div>
-                    <a href=""><img width="40px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlLvCjKdvvLqboIcjtUjvrC-BG4GLGK2Fyg&s" alt=""></a>
-                </div>
-            </div>
-
-            <div class="banner">
-                <a href=""> 지친피부에 충전이 필요한 지금!
+                <div class="preview_item"> <!-- 이미지는 라운드처리 -->
+                    <div> <!--  디지털덕찌 -->
+                        <img src="https://weare.lush.co.kr/images/main_app_digital@3x.jpg" alt="">
+                        <div>디지털덕찌</div> 
+                        <div>러쉬 만의 맴버십 뱃지 프로그램 <br>
+                            덕찌력을 쌓아보세요! <br>
+                            특별한 선물이 준비되어 있어요.</div>
+                    </div>
+                    <div> <!-- 회원선물 -->
+                        <img src="https://weare.lush.co.kr/images/main_app_member@3x.jpg" alt="">
+                        <div>회원선물</div> 
+                        <div>공식 앱 회원에게만 제공하는 <br>
+                            365일 신선한 스마트 샘플과 <br>
+                            깜짝 선물 교환권을 발급해 드려요!</div>
+                    </div>
                     <div>
-                    <img class="banner-bg" src="https://www.casenews.co.kr/news/photo/202009/3910_14069_3218.jpg">
-                    <img class="banner-logo" src="https://weare.lush.co.kr/images/btn_app_apple.png" alt="">
-                    <img class="banner-logo" src="https://weare.lush.co.kr/images/btn_app_google.png" alt="">
+                        <img src="https://weare.lush.co.kr/images/main_app_gift@3x.jpg" alt="">
+                        <div>선물하기</div> 
+                        <div>주소와 연락처를 몰라도 <br>
+                            향기로운 선물을 메시지 카드와 함께 <br>
+                            쇼핑백에 담아 선물해 보세요!   </div>
+                    </div>
+
+                </div><!-- 프리뷰 아이템 -->
+            </div><!-- 서비스러쉬  -->
+
+            <div class="survey"> <!-- 설문조사 -->
+                    <img width="80%"
+                    src="./resources/images/index/survey.jpg">
+                <div class="survey_text">
+                    <div style="font-size: 25px;"
+                    >설문조사</div>
+                <div>여러분의 러쉬 경험을 알려주세요!</div>
+            </div>
+            </div><!--설문 -->
+
+            <div style="height:100px; background-color: transparent;">
+                
+            </div>
+
+            <div class="vlaue"> <!--러쉬가치 -->
+                <div class="value_box"><!--첫째줄 -->
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div><!--둘째줄 -->
+                <div class="value_box">
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
                 </div>
             </div>
 
-            <div class="service">
-                <div>
-                미리보는 러쉬 다채로운 서비스
-                </div>
-                <div>
-                <a href="">
-                    디지털 덕찌<img width="50" src="https://weare.lush.co.kr/images/main_app_digital@3x.jpg" alt="">
-                </a>
-                </div>
-                <div>
-                <a href="">회원 선물
-                    <img width="50"  src="https://weare.lush.co.kr/images/main_app_member@3x.jpg" alt="">
-                </a>
-                </div>
-                <div>
-                <a href=""> 선물하기
-                    <img  width="50" src="https://weare.lush.co.kr/images/main_app_gift@3x.jpg" alt="">
-                </a>
+            <div class="footer"><!--footer-->
+                <div>러쉬 앱 다운받기</div>
+                <div>고객센터</div>
+                <div>기업선물</div>
+                <div>주소</div>
+                <div>개인정보방침</div>
+
             </div>
 
-        </div>
-            <div class="servey">
-                <div>설문조사</div>
-                <div>
-                    여러분의 러쉬 경험을 남겨주세요!
-                </div>
-            </div>
 
-            
+        </div><!-- 페이지 컨텐츠 -->
 
-        </div>
-    </div>
+
+
+
+    </div><!-- 최외곽 -->
+
+
+
+    
 </body>
 </html>

@@ -19,24 +19,33 @@
         height: 100%;
         }
 
-    .navigation{
-    display: flex;
-    justify-content: space-evenly;
-    position:fixed;
-    top:0;
-    width: 100%;
-    background-color: black;
-    }
+        .navigation{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
 
-    .navigation >div{
-        font-size: 30px;
-        border: 0;
-    }
+            position: fixed;
+            top: 0px;
+            background-color: white;
+            
+            z-index: 100;
 
-    .navigation > div > a{
-    text-decoration: none;
-    color: white;
-    }
+            
+        }
+
+
+        .navigation > div{
+
+            align-content: center;
+
+            font-size: 15px;
+        }
+
+        .navigation > div >a{
+            text-decoration: none;
+            color: black;
+        }
+
 
     .logo{
         font-size: 100px;
@@ -55,9 +64,13 @@
 
     .banner{
             font-size: 50px;
-            background: #000;
+            background: transparent;
             color: azure;
-            padding-top: 200px;
+            padding-top: 20px;
+
+            position: relative;
+
+
         }
 
         .banner-logo{
@@ -65,12 +78,23 @@
         }
         .banner-bg{
             width: 100%;
+            
 
         }
         .banner >a{
             font-size: 30px;
             color: white;
             text-decoration: none;
+        }
+
+        .bn_text{
+            font-size: 35px;
+            color: white;
+            font-weight: bolder;
+
+            position: absolute;
+            left: 13%;
+            bottom: 7%;
         }
         
         .content{
@@ -88,6 +112,20 @@
             height: 25%;
         }
 
+        .footer{
+            background-color: black;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            display: flex;
+            justify-content: space-around;
+
+            color: bisque;
+        }
+
 </style>
 
 
@@ -95,21 +133,13 @@
 <body>
     
         <div class="first"> <!-- /최외곽/ -->
-            <div><!-- /  상단 메뉴 / -->
-                <div class="navigation">
-                    <div class="logo">
-                        <a href="/index.html">lush</a>
-                    </div>
-                    <div >
-                        <a href="/Lush소개.html">러쉬 소개</a>
-                    </div>
-                    <div> 
-                        <a href="/spa.html">스파</a>
-                        </div>
-                    <div>
-                        <a href="./매장.html">매장</a>
-                    </div>
-                </div>
+            <div class="navigation"><!-- 네비게이션 -->
+                <div style="font-size: 35px; font-weight: bolder;">  
+                    <a href="./index.html">LUSH</a></div>
+                <div>  <a href="/lush/Lush소개.html">러쉬소개</a> </div>
+                <div> <a href="/lush/spa.html">스파</a></div>
+                <div> <a href="/lush/매장.html">매장 안내</a>   </div>
+            </div><!-- 네비게이션 -->
 
                 <div class="quick">
                     <div>카카오톡</div>
@@ -119,13 +149,16 @@
                             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOlLvCjKdvvLqboIcjtUjvrC-BG4GLGK2Fyg&s" alt=""></a>
                     </div>
                 </div>
-                <div class="banner">
-                    <div>가장 가까운 매장을 찾아 향기로운 러쉬를 만나보세요
-
-                    </div>
-                        <div>
+                <div class="banner"> <!-- 배너 -->
+                    <div>
                         <img class="banner-bg" src="https://www.jangup.com/news/photo/202306/90603_62111_3141.jpg">
                     </div>
+                    <div class="bn_text">
+                    가장 가까운 매장을 찾아 <br>
+                    향기로운 러쉬를 만나보세요!
+                    </div>
+                </div><!-- 배너 -->
+                
                 </div>
 
                 <div class="content">
@@ -141,6 +174,14 @@
                     </div>
                 </div>
 
+                <div class="footer"><!--footer-->
+                    <div>러쉬 앱 다운받기</div>
+                    <div>고객센터</div>
+                    <div>기업선물</div>
+                    <div>주소</div>
+                    <div>개인정보방침</div>
+    
+                </div>
     
         </div>
     
