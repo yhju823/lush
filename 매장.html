@@ -119,13 +119,10 @@
             padding: 20px;
         }
         .right{
-            display:flex;
-            flex-direction: column;
+
             height: 100%;
         }
-        .right >div{
-            height: 25%;
-        }
+
 
         .footer{
             background-color: black;
@@ -142,12 +139,31 @@
         }
 
         .map_title{
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
+
+            width: 250px;
+            
+            text-align: center;
+
+            margin: 20px;
+
+            border-radius: 10px;
+            
+            background-color: black;
+            color: white;
+
         }
 
         .map_text{
+            font-size:0px;
+            height: 0;
+        }
+
+        .map_title:hover .map_text{
             font-size: 15px;
+            height: 50px;
+            color: gray;
         }
 
 </style>
