@@ -7,11 +7,12 @@
 
     <style>
         *{
-            border: 1px  solid  black;
+            border: 0px  solid  black;
         }
 
         .container{
-            
+            display: flex;
+            flex-direction: column;
         }
 
         .visual-spa{
@@ -41,7 +42,12 @@
         }
 
         .visual-spa > img{
-            justify-content: center;
+            align-items: center;
+        }
+
+        .article-container{
+            padding-left: 200px;
+            padding-right: 200px;
         }
 
         .spa-info-title{
@@ -53,11 +59,42 @@
             background-color: white;
         }
 
-        .spa-info-title > nav{
-            color: #ffffff31;
-            font-size: 15px;
+        .spa-info-menu > a{
+            color: black;
+            font-size: 16px;
             font-weight: bold;
             text-decoration: none;
+        }
+
+        .spa-info-menu > a:hover{
+            color: green;
+            text-decoration: none;
+        }
+
+        .spa-video{
+            display: flex;
+            justify-content: center;
+        }
+
+        .spa-info-word{
+            display: flex;
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .spa-info-word > iframe{
+            justify-content: center;
+        }
+
+        .spa-info-word-title > span{
+            line-height: normal;
+            letter-spacing : normal;
+        }
+
+        .spa-QR{
+
+            position: absolute;
         }
 
     </style>
@@ -79,38 +116,78 @@
             </div>
         </div>
 
-        <div class="spa-info-title"> <!-- 스파 소개, 이용방법 타이틀 -->
-            <nav>
-                <a href="">소개</a>
-                <a href="">이용방법</a>
-            </nav>
-        </div>
-
-        <div class="spa-info-word"> <!-- 스파 소개, 영상 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/G9JsHWeO3c0?si=iW_06TiTAA7FSW6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <div>
-                <span>스 파 소 개</span>
-                    <p>
-                    <span>감성 스파라 불리는 러쉬 스파는 총 14가지 트리트먼트가 있으며 트리트먼트별 각기 다른 음악과 놀라운<hr>퍼포먼스가 함께 진행됩니다. </span>
-                    </p>
-                    <p>
-                    <span>자연에서 얻어진 소리와 오케스트라와 같은 멋진 협주곡으로 숲속 또는 바다로의 여행을 떠날 수 있으며<hr>유럽적인 터치와 환상의 퍼포먼스로 러쉬 스파가 영국 전원의 정취와 함께 진정한 의미의 휴식을 선사합니다</span>
-                    </p>
-
+        <div class="article-container">
+            <div class="spa-info-title"> <!-- 스파 소개, 이용방법 타이틀 -->
+                <nav class="spa-info-menu">
+                    <a href="">소개</a>
+                    &ensp;
+                    <a href="">이용방법</a>
+                </nav>
             </div>
+            <article>
+                <div class="spa-video"> <!-- 스파 영상 -->
+                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/G9JsHWeO3c0?si=iW_06TiTAA7FSW6u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+            
+            <article>
+                <div class="spa-info-word"> <!-- 스파 소개 -->
+                    <div>
+                        <span class="spa-info-word-title">스 파 소 개</span>
+                            <p>
+                            <span>감성 스파라 불리는 러쉬 스파는 총 14가지 트리트먼트가 있으며 트리트먼트별 각기 다른 음악과 놀라운<br>퍼포먼스가 함께 진행됩니다. </span>
+                            <br>
+                            <br>
+                            <span>자연에서 얻어진 소리와 오케스트라와 같은 멋진 협주곡으로 숲속 또는 바다로의 여행을 떠날 수 있으며<br>유럽적인 터치와 환상의 퍼포먼스로 러쉬 스파가 영국 전원의 정취와 함께 진정한 의미의 휴식을 선사합니다</span>
+                            </p>
+                    </div>
+                    <div>
+                        <li>
+                            <a href="https://smore.im/quiz/BtL8bMAPzR" target="_blank">
+                                나에게 맞는 스파 트리트먼트 찾기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://smore.im/quiz/yuyuvgmCC7">
+                                나에게 맞는 스파 트리트먼트 조합 찾기
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div> <!-- 베스트 트리트먼트 --> 
+                    <div class="swiper-containner">
+                        <div class="spa-card">
+                            <h3>베스트 트리트먼트</h3>
+                            <img height="560px" src="./resources/images/스파카드 1.jpg" alt="">
+                            <h3>베스트 트리트먼트</h3>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article> <!-- 스파 모바일 홍보-->
+                <div>
+                    <img src="./resources/images/스파 QR 홍보 이미지.jpg" alt="">
+                    <div class="spa-QR">
+                        <img src="./resources/images/스파 QR.png" alt="" />
+                        <div>
+                            <p>모바일에서 편리하게 구매해 보세요!</p>
+                            <p><a href="./spa_use_info.html">스파 이용 방법</a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <article>
+                <div> <!-- 스파 매장 안내 -->
+                    
+                </div>
+            </article>
         </div>
-
-        <div> <!-- 베스트 트리트먼트 --> 
-
-        </div>
-
-        <div> <!-- 스파 매장 안내 -->
-
-        </div>
-
-
-
-
+        
 
 
     </div>
