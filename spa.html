@@ -10,6 +10,61 @@
             border: 0px  solid  black;
         }
 
+        .navigation{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            position: fixed;
+            top: 0px;
+            background-color: white;
+            
+            z-index: 100;
+
+            
+        }
+
+
+        .navigation > div{
+
+            align-content: center;
+
+            font-size: 15px;
+        }
+
+        .navigation > div >a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .quick{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 10px;
+            top: 300px;
+
+            background-color: transparent            ;
+
+            height: 210px;
+            width: 70px;
+
+            z-index: 99;
+        }
+
+        .quick > div{
+            width: 70px;
+            height: 70px; 
+        
+        }
+
+        .quick > div > a > img{
+            width: 60px;
+            height: 60px;
+
+            border-radius: 70px;
+        }
+
         .container{
             display: flex;
             flex-direction: column;
@@ -92,14 +147,64 @@
             letter-spacing : normal;
         }
 
-        .spa-QR{
-
-            position: absolute;
+        .spa-card-container{
+            display: grid;
+            overscroll-behavior-inline: contain;
+            scroll-behavior: smooth;
+            scroll-padding-inline: 1rem;
+            grid-auto-flow: column;
+            overflow-x: auto;
         }
 
+        .spa-card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 1224px;
+            height: 100%;
+        }
+
+        .spa-QR-backimg > img{
+            position: absolute;
+            justify-content: center;
+        }
+
+        .spa-place{
+            display: flex;
+            font-size: 15px;
+            color: black;
+
+        }
+
+        .spa-place > img{
+            justify-content: left;
+        }
     </style>
 </head>
 <body>
+    
+    <div class="navigation"><!-- 네비게이션 -->
+        <div style="font-size: 35px; font-weight: bolder;">  
+            <a href="">LUSH</a></div>
+        <div>  <a href="./Lush소개.html">러쉬소개</a> </div>
+        <div> <a href="./spa.html">스파</a></div>
+        <div> <a href="./매장.html">매장 안내</a>   </div>
+    </div><!-- 네비게이션 -->
+
+    <div class="quick"><!-- 퀵메뉴 -->
+        <div>
+            <a  href="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+            <img src="./resources/images/index/shop.webp" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+            <img src="https://cdn.icon-icons.com/icons2/3860/PNG/512/top_arrow_icon_238720.png" alt=""></a>
+        </div>
+    </div><!-- 퀵메뉴 -->
 
     <!-- 최 외곽 div -->
     <div class="container">
@@ -158,20 +263,84 @@
     
             <article>
                 <div> <!-- 베스트 트리트먼트 --> 
-                    <div class="swiper-containner">
+                    <div class="spa-card-container">
                         <div class="spa-card">
-                            <h3>베스트 트리트먼트</h3>
-                            <img height="560px" src="./resources/images/스파카드 1.jpg" alt="">
-                            <h3>베스트 트리트먼트</h3>
+                            <div>
+                                <img height="560px" src="./resources/images/스파카드 2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>더 굿 아워</h3>
+                                <p>충분한 이완, 자유로운 몸과 마음, 온전한 휴식</p>
+                                <p>러쉬에서 가장 인기있는 전신 마사지 몸의 긴장을 풀어주는 더 굿 아워는 적당한 압이 함께하는 트리트먼트예요. 
+                                    70분 감의 딥 티슈 마사지는 지친 근육의 뻐근함과 오랜 근심으로부터 당신을 해방시켜 드립니다. </p>
+                                    <dl>
+                                        <dt>네이키드 레벨 3 </dt>
+                                        <dd>속옷만 남겨 둔 채 이불 속으로</dd>
+                                        <dt>소요시간</dt>
+                                        <dd>컨설테이션 15분 + 트리트먼트 70분</dd>
+                                    </dl>
+                            </div>
+                        </div>
+                        <div class="spa-card">
+                            <div>
+                                <img height="560px" src="./resources/images/스파카드 3.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>탱글드 헤어 트리트먼트</h3>
+                                <p>가벼워진 몸과 마음 다시 시작할 수 있는 용기 </p>
+                                <p>머리와 윗가슴 부위를 집중적으로 케어해주는 마사지예요. 
+                                    신비로운 선율이 귀를 간지럽히고 두피에 힘있는 손길이 닿는 순간, 눈이 감기며 깊은 의식의 세계로 빠져듭니다.</p>
+                                    <dl>
+                                        <dt>네이키드 레벨 1 </dt>
+                                        <dd>탈의가 거의 필요 없는 정도</dd>
+                                        <dt>소요시간</dt>
+                                        <dd>컨설테이션 15분 + 트리트먼트 25분</dd>
+                                    </dl>
+                            </div>
+                        </div>
+                        <div class="spa-card">
+                            <div>
+                                <img height="560px" src="./resources/images/스파카드 4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>시네스티지아</h3>
+                                <p>바쁜 일상 속 평화, 무엇이든 할 수 있는 자신감, 느긋한 휴식 시간</p>
+                                <p>내가 직접 고르는 단어에 따라 스파 여정이 시작되거든요. 
+                                    개개인 마다 모두 다른 코스로 이루어지는 맞춤형 트리트먼트죠. 
+                                    11가지 마음 상태에 따라 진행되는 80분 간의 릴렉싱을 경험해보세요</p>
+                                    <dl>
+                                        <dt>네이키드 레벨 3 </dt>
+                                        <dd>속옷만 남겨 둔 채 이불 속으로</dd>
+                                        <dt>소요시간</dt>
+                                        <dd>컨설테이션 15분 + 트리트먼트 80분</dd>
+                                    </dl>
+                            </div>
+                        </div>
+                        <div class="spa-card">
+                            <div>
+                                <img height="560px" src="./resources/images/스파카드 1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3>베스트 트리트먼트</h3>
+                                <p>가벼운 발걸음, 상쾌한 기분전환, 바쁜 일상 속 해방감 </p>
+                                <p>제 2의 심장이라고도 하는 발을 잘 케어해주는 것은 아주 중요하답니다.
+                                    입욕, 스크럽, 풋 마스크, 그리고 가벼운 두피 마사지까지. 몸과 마음에 놀라운 평화를 선물해보세요. </p>
+                                    <dl>
+                                        <dt>네이키드 레벨 1 </dt>
+                                        <dd>탈의가 거의 필요 없는 정도</dd>
+                                        <dt>소요시간</dt>
+                                        <dd>컨설테이션 15분 + 트리트먼트 60분</dd>
+                                    </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
             
             <article> <!-- 스파 모바일 홍보-->
-                <div>
-                    <img src="./resources/images/스파 QR 홍보 이미지.jpg" alt="">
-                    <div class="spa-QR">
+                <div class="spa-QR-backimg">
+                    <img width="600px" src="./resources/images/스파 QR 홍보 이미지.jpg" alt="">
+                    <div>
                         <img src="./resources/images/스파 QR.png" alt="" />
                         <div>
                             <p>모바일에서 편리하게 구매해 보세요!</p>
@@ -182,9 +351,30 @@
             </article>
             
             <article>
-                <div> <!-- 스파 매장 안내 -->
-                    
+                <div class="spa-place"> <!-- 스파 매장 안내 -->
+                    <img width="600px" src="./resources/images/러쉬 스파 매장 이미지.jpg" alt="">
+                    <h3>매장안내</h3>
+                    <br>
+                    <div><a href="#">압구정점</a></div>
+                    <dl>
+                        <dt>주소</dt>
+                        <dd>
+                            <a href="https://map.naver.com/v5/entry/place/1884676114?placePath=%2Fhome&c=15,0,0,0,dh" target="_blank" title="새 창으로 열림">서울 강남구 언주로 868 B1층 </a>
+                            <button type="button">주소 복사</button>
+                            <input type="text" value="" title="주소복사" />
+                        </dd>
+                        <dt>연락처</dt>
+                        <dd><a href="tel:0507-1411-5872">0507-1411-5872</a></dd>
+                        <dt>영업시간</dt>
+                        <dd>월요일~일요일   10:00~22:00</dd>                                        
+                        <dd>                                           
+                            <a href="https://pf.kakao.com/_UyZXb" target="_blank" title="새 창으로 열림">문의하기 </a>                                               
+                        </dd>                                        
+
                 </div>
+
+
+
             </article>
         </div>
         
