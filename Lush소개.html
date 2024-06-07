@@ -64,13 +64,43 @@
             margin-left: 30px;
         }
 
+        .menu > a:hover{
+            text-decoration: none;
+            color: #000000de;
+            font-size: 15px;
+            font-weight: bolder;
+
+            margin-left: 30px;
+        }
+
+        .quick{
+            flex-direction: column;
+            position: fixed;
+            right: 10px;
+            top: 300px;
+
+            background-color: transparent;
+
+        }
+
+        .quick > div{
+            width: 70px;
+            height: 70px; 
+        
+        }
+
+        .quick > div > a > img{
+            width: 50px;
+            height: 50px;
+
+            border-radius: 70px;
+        }
+
         .introduce {
             position: absolute;
             left: 15%;
             bottom: 20%;
         }
-
-
 
         .introduce>div {
             padding: 15px;
@@ -118,6 +148,10 @@
             font-size: 30px;
         }
 
+        .D{
+            margin-top: 10px;
+        }
+
         body {
             background-image: url("https://i.ytimg.com/vi/LsmZEPmQChY/maxresdefault.jpg");
             width: 100%;
@@ -138,18 +172,47 @@
         }
 
 
-        .footer {
-            background-color: rgb(0, 0, 0);
-            height: 500px;
-            width: 100%;
+        .footer{
+            background-color: black;
+            
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 70px;
+            padding-right: 70px;
+
             display: flex;
+            justify-content: space-around;
+
+            color: rgb(255, 255, 255);
+            font-size: small;
         }
 
-        
-    .footer > div{
-        width: 50%;
-        color: white;
-    }
+        .call:hover{
+            border-bottom: rgb(255, 255, 255) solid 1px;
+            cursor: pointer;
+        }
+
+        .ad{
+            color: rgba(255, 255, 255, 0.486);
+        }
+
+        .my{
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .my>div{
+            cursor: pointer;
+        }
+
+        .my>div>a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .my>div:nth-child(1){
+            color: yellow;
+        }
 
 
     </style>
@@ -281,26 +344,87 @@
     <div class="navigation">
         <div>
             <div class="logo">
-                <a href="">Lush</a>
+                <a href="./index.html">Lush</a>
             </div>
 
             <div class="menu">
-                <a href="">러쉬소개</a>
-                <a href="">스파</a>
-                <a href="">매장안내</a>
+                <a href="./Lush소개.html">러쉬소개</a>
+                <a href="./spa.html">스파</a>
+                <a href="./매장.html">매장안내</a>
             </div>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="quick"><!-- 퀵메뉴 -->
         <div>
-            <h1>ttatG's Shop</h1>
-            <hr>
-            <h3>대전광역시 서구 월평동로 83</h3>
-            <h3>Tel : 042 - 1234 - 5678</h3>
-            <h3>e-mail : 2000msj@naver.com</h3>
+            <a  href="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/KakaoTalk_logo.svg" width="150" height="50" alt=""></a>
         </div>
+        <div>
+            <a href="">
+            <img src="./resources/images/index/shop.webp" width="150" height="50" alt=""></a>
+        </div>
+        <div>
+            <a href="">
+            <img src="https://cdn.icon-icons.com/icons2/3860/PNG/512/top_arrow_icon_238720.png" width="150" height="50" alt=""></a>
+        </div>
+    </div><!-- 퀵메뉴 -->
+
+    <div class="footer"><!--footer-->
+        <div>러쉬 앱 다운받기 <br><br>
+            <a href="https://apps.apple.com/kr/app/%EB%9F%AC%EC%89%AC/id6450295213" target="_blank">
+                <img src="./resources/images/스크린샷 2024-06-07 113659.png" width="150" height="50" alt="">
+            </a>
+
+            <br>
+
+            <a href="https://play.google.com/store/apps/details?id=kr.co.lush.lushapp&pli=1" target="_blank">
+                <img src="./resources/images/구글.png" width="150" height="50" alt="">
+            </a>
+            <a href="./resources/images/구글.png"></a>
+        </div>
+
+        <div><!--고객센터-->
+            <h2>고객센터</h2>
+            <a class="call">1644-2357</a>
+            <br>
+            <div>상담전화 13:00 ~ 16:00(평일)
+                <br>webmaster@lush.co.kr
+            </div>
+            <br>
+            <div>
+                상담톡 10:00 ~16:00(평일) <br>
+                상담톡시작하기 
+            </div>
+        </div>
+        <div><!--고객센터-->
+            <h2>기업선물</h2>
+                <a class="call">070-4713-8543</a>
+                <div>order@lush.co.kr</div>
+        </div>
+        <div><!--주소-->
+            <div class="ad">서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아
+                <br>사이트 운영자 : 주식회사 러쉬코리아 I 대표이사 : 우미령
+                <br>사업자 등록번호 : 201-81-77964 사업자정보확인
+                <br>통신판매업 신고번호 : 2012-서울서초-0647 I 개인정보보호책임자 : 장승웅
+                <br>
+                <br>COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.
+                <br>
+                <br>
+                <a href="https://www.youtube.com/user/LUSHKOREA1?app=desktop" target="_blank">
+                    <img src="./resources/images/asdf.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="my"><!--개인정보-->
+            <div><a href="https://weare.lush.co.kr/policy_L2401.html">개인정보처리방침</a></div>
+            <div><a href="https://weare.lush.co.kr/policy_video_v2.html">영상정보관리지침</a></div>
+            <div><a href="https://weare.lush.co.kr/useinfo_v5.html">이용약관</a></div>
+        </div>
+
     </div>
+
 
 </body>
 
