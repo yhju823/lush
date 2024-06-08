@@ -4,182 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>소개 &gt; 스파 &gt; 프레쉬 핸드메이드 코스메틱 러쉬</title>
-
-    <style>
-        *{
-            border: 0px  solid  black;
-        }
-
-        .navigation{
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-
-            position: fixed;
-            top: 0px;
-            background-color: white;
-            
-            z-index: 100;
-
-            
-        }
-
-
-        .navigation > div{
-
-            align-content: center;
-
-            font-size: 15px;
-        }
-
-        .navigation > div >a{
-            text-decoration: none;
-            color: black;
-        }
-
-        .quick{
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            right: 10px;
-            top: 300px;
-
-            background-color: transparent            ;
-
-            height: 210px;
-            width: 70px;
-
-            z-index: 99;
-        }
-
-        .quick > div{
-            width: 70px;
-            height: 70px; 
-        
-        }
-
-        .quick > div > a > img{
-            width: 60px;
-            height: 60px;
-
-            border-radius: 70px;
-        }
-
-        .container{
-            display: flex;
-            flex-direction: column;
-        }
-
-        .visual-spa{
-            display: flex;
-
-        }
-
-        .visual-spa > div{
-            position: absolute;
-            color: white;
-            left: 15%;
-            bottom: 15%;
-        }
-
-        .visual-spa > h2{
-            font-size: 15px;
-        }
-
-        .visual-spa-text1{
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .visual-spa-text2{
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .visual-spa > img{
-            align-items: center;
-        }
-
-        .article-container{
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-
-        .spa-info-title{
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-
-            background-color: white;
-        }
-
-        .spa-info-menu > a{
-            color: black;
-            font-size: 16px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .spa-info-menu > a:hover{
-            color: green;
-            text-decoration: none;
-        }
-
-        .spa-video{
-            display: flex;
-            justify-content: center;
-        }
-
-        .spa-info-word{
-            display: flex;
-            font-size: 15px;
-            color: black;
-            font-weight: bold;
-        }
-
-        .spa-info-word > iframe{
-            justify-content: center;
-        }
-
-        .spa-info-word-title > span{
-            line-height: normal;
-            letter-spacing : normal;
-        }
-
-        .spa-card-container{
-            display: grid;
-            overscroll-behavior-inline: contain;
-            scroll-behavior: smooth;
-            scroll-padding-inline: 1rem;
-            grid-auto-flow: column;
-            overflow-x: auto;
-        }
-
-        .spa-card{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 1224px;
-            height: 100%;
-        }
-
-        .spa-QR-backimg > img{
-            position: absolute;
-            justify-content: center;
-        }
-
-        .spa-place{
-            display: flex;
-            font-size: 15px;
-            color: black;
-
-        }
-
-        .spa-place > img{
-            justify-content: left;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/spa.css" />
 </head>
 <body>
     
@@ -246,17 +72,19 @@
                             <span>자연에서 얻어진 소리와 오케스트라와 같은 멋진 협주곡으로 숲속 또는 바다로의 여행을 떠날 수 있으며<br>유럽적인 터치와 환상의 퍼포먼스로 러쉬 스파가 영국 전원의 정취와 함께 진정한 의미의 휴식을 선사합니다</span>
                             </p>
                     </div>
-                    <div>
-                        <li>
-                            <a href="https://smore.im/quiz/BtL8bMAPzR" target="_blank">
-                                나에게 맞는 스파 트리트먼트 찾기
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://smore.im/quiz/yuyuvgmCC7">
-                                나에게 맞는 스파 트리트먼트 조합 찾기
-                            </a>
-                        </li>
+                    <div class="spa-link-title">
+                        <ul>
+                            <li class="spa-link-top">
+                                <a class="spa-a-tag" href="https://smore.im/quiz/BtL8bMAPzR" target="_blank">
+                                    나에게 맞는 스파 트리트먼트 찾기
+                                </a>
+                            </li>
+                            <li class="spa-link-bottom">
+                                <a class="spa-a-tag" href="https://smore.im/quiz/yuyuvgmCC7">
+                                    나에게 맞는 스파 트리트먼트 조합 찾기
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </article>
@@ -337,15 +165,12 @@
                 </div>
             </article>
             
-            <article> <!-- 스파 모바일 홍보-->
-                <div class="spa-QR-backimg">
-                    <img width="600px" src="./resources/images/스파 QR 홍보 이미지.jpg" alt="">
+            <article class="spa-QR"> <!-- 스파 모바일 홍보-->
+                <div class="spa-QR-image">
+                    <img src="./resources/images/스파 QR.png" alt="" />
                     <div>
-                        <img src="./resources/images/스파 QR.png" alt="" />
-                        <div>
-                            <p>모바일에서 편리하게 구매해 보세요!</p>
-                            <p><a href="./spa_use_info.html">스파 이용 방법</a></p>
-                        </div>
+                        <p id="QRtext">모바일에서 편리하게 구매해 보세요!</p>
+                        <p><a id="QRbtn" href="./spa_use_info.html">스파 이용 방법</a></p>
                     </div>
                 </div>
             </article>
@@ -353,23 +178,27 @@
             <article>
                 <div class="spa-place"> <!-- 스파 매장 안내 -->
                     <img width="600px" src="./resources/images/러쉬 스파 매장 이미지.jpg" alt="">
-                    <h3>매장안내</h3>
-                    <br>
-                    <div><a href="#">압구정점</a></div>
-                    <dl>
-                        <dt>주소</dt>
-                        <dd>
-                            <a href="https://map.naver.com/v5/entry/place/1884676114?placePath=%2Fhome&c=15,0,0,0,dh" target="_blank" title="새 창으로 열림">서울 강남구 언주로 868 B1층 </a>
-                            <button type="button">주소 복사</button>
-                            <input type="text" value="" title="주소복사" />
-                        </dd>
-                        <dt>연락처</dt>
-                        <dd><a href="tel:0507-1411-5872">0507-1411-5872</a></dd>
-                        <dt>영업시간</dt>
-                        <dd>월요일~일요일   10:00~22:00</dd>                                        
-                        <dd>                                           
-                            <a href="https://pf.kakao.com/_UyZXb" target="_blank" title="새 창으로 열림">문의하기 </a>                                               
-                        </dd>                                        
+
+                    <div class="spa-place-list">
+                        <h3>스파 매장 안내</h3>
+                        <br>
+                        <div class="spa-place-title"><a href="#">압구정점</a></div>
+                        <dl>
+                            <dt>주소</dt>
+                            <dd>
+                                <a href="https://map.naver.com/v5/entry/place/1884676114?placePath=%2Fhome&c=15,0,0,0,dh" target="_blank" title="새 창으로 열림">서울 강남구 언주로 868 B1층 </a>
+                                <button type="button">주소 복사</button>
+                                <input type="text" value="" title="주소복사" />
+                            </dd>
+                            <dt>연락처</dt>
+                            <dd><a href="tel:0507-1411-5872">0507-1411-5872</a></dd>
+                            <dt>영업시간</dt>
+                            <dd>월요일~일요일   10:00~22:00</dd>                                        
+                            <dd>                                           
+                                <a href="https://pf.kakao.com/_UyZXb" target="_blank" title="새 창으로 열림">문의하기 </a>                                               
+                            </dd>       
+                        </dl>
+                    </div>
 
                 </div>
 

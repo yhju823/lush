@@ -1,0 +1,194 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-spa{
+    display: flex;
+
+}
+
+.visual-spa > div{
+    position: absolute;
+    color: white;
+    left: 15%;
+    bottom: 15%;
+}
+
+.visual-spa > h2{
+    font-size: 15px;
+}
+
+.visual-spa-text1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.visual-spa-text2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.visual-spa > img{
+    align-items: center;
+}
+
+.article-container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.spa-info-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: white;
+}
+
+.spa-info-menu > a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spa-info-menu > a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+.spa-video{
+    display: flex;
+    justify-content: center;
+}
+
+.spa-info-word{
+    display: flex;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.spa-info-word > iframe{
+    justify-content: center;
+}
+
+.spa-info-word-title > span{
+    line-height: normal;
+    letter-spacing : normal;
+}
+
+.spa-link-title{
+    width: 410px;
+}
+
+.spa-link-top {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    list-style: none;
+    padding: 25px 0px;
+}
+.spa-link-bottom {
+    border-bottom: 1px solid black;
+    list-style: none;
+    padding: 25px 0px;
+}
+.spa-card-container{
+    display: grid;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-padding-inline: 1rem;
+    grid-auto-flow: column;
+    overflow-x: auto;
+}
+
+.spa-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1224px;
+    height: 100%;
+}
+
+.spa-QR{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    background: url(../resources/images/spa\ QR\ 홍보\ 이미지.jpg) no-repeat center center
+}
+#QRtext{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+#QRbtn{
+    display: inline-block;
+    padding: 0px 64px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 58px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+}
+#QRbtn:hover{
+    background-color: white;
+    color: black
+}
+
+.spa-QR-image{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.spa-QR-image > img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spa-place{
+    display: flex;
+    font-size: 15px;
+    color: black;
+
+}
+
+.spa-place-list{
+    display: flex;
+    flex-direction: column;
+    
+}
+.spa-place-title{
+    font-weight: bold;
+    text-decoration: none;
+    border-top: 1px solid black;
+}
+
+.spa-place > img{
+    justify-content: left;
+    margin-right: 70px;
+}
